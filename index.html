@@ -4,56 +4,83 @@
 <!-- Grupo Juan M -->
 
 <head>
+    <!-- Define a codificação de caracteres da página -->
     <meta charset="UTF-8">
+    <!-- Define a largura da viewport e a escala inicial -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página -->
     <title>Clima Time</title>
+    <!-- Inclui o arquivo de estilo principal -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Define o ícone da página -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/weather-forecast.png" id="icon2">
+    <!-- Inclui o conjunto de ícones Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+    <!-- Container da imagem de fundo -->
     <div class="image">
+        <!-- Imagem de fundo -->
         <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt="" id="background">
+        <!-- Elemento de vidro -->
         <div class="glass"></div>
     </div>
+    <!-- Elemento para exibir o horário -->
     <span id="horario"></span>
 
+    <!-- Elemento principal -->
     <main>
-        
-
+        <!-- Container das informações climáticas -->
         <div>
+            <!-- Container do nome da cidade -->
             <div class="nomeCidade">
+                <!-- Título da cidade -->
                 <h1 id="nome"></h1>
+                <!-- Ícone do país -->
                 <img alt="" id="iconPais">
             </div>
             
+            <!-- Container da temperatura -->
             <div class="temperatura">
+                <!-- Ícone do clima -->
                 <img alt="" id="iconClima">
+                <!-- Temperatura -->
                 <span id="temperatura"></span>
             </div>
         </div>
 
+        <!-- Container das informações adicionais -->
         <div class="container">
+            <!-- Informação de umidade -->
             <div class="umidade">
+                <!-- Ícone de umidade -->
                 <strong><i class='bx bx-water' ></i> Umidade:</strong> <span id="umidade"></span>
             </div>
+            <!-- Informação de velocidade do vento -->
             <div class="veloVento">
+                <!-- Ícone de vento -->
                 <strong><i class='bx bx-wind' ></i> Velocidade do vento:</strong> <span id="veloVento"></span>
             </div>
+            <!-- Informação do clima -->
             <div class="clima">
+                <!-- Ícone do clima -->
                 <strong><i class='bx bxs-cloud' ></i> Clima: </strong><span id="clima"></span>
             </div>
         </div>
 
+        <!-- Campo de pesquisa -->
         <div class="pesquisar">
+            <!-- Input de pesquisa -->
             <input type="text" id="pesquisar" value="Marilia" placeholder="Procurar...">
+            <!-- Ícone de pesquisa -->
             <i class='bx bx-search-alt' ></i>
         </div>
 
     </main>
 
 </body>
+<!-- Inclui o arquivo de script JavaScript -->
 <script src="js/index.js"></script>
 
 </html>
